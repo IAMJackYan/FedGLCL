@@ -171,7 +171,7 @@ def main(args):
 
     from transformers import AutoTokenizer, AlignModel
     classes_strs = ['backpack', 'bike', 'calculator', 'headphones', 'keyboard', 'laptop computer', 'monitor', 'mouse', 'mug', 'projector']
-    model = AlignModel.from_pretrained("xxx")
+    model = AlignModel.from_pretrained("xxx")  #download checkpoint and change the path 
     tokenizer = AutoTokenizer.from_pretrained("xxx")
     inputs = tokenizer([f"a photo of a {c}" for c in classes_strs], padding=True, return_tensors="pt")
     text_features = model.get_text_features(**inputs)
