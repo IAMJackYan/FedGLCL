@@ -1,4 +1,4 @@
-# FedGLCL
+# ICLR2025-FedGLCL
 
 ### Install
 
